@@ -1,0 +1,45 @@
+void main(){
+  print ("Hello");
+  
+  String name = "racque";
+  bool isOld = false;
+  double amount = 12.34;
+  int num1 = 23232;
+  List <String> names = ["jgot", "jadei", "jeff", "raul", "ronald"];
+  
+  // + - / *
+  
+  int sum = 15 + num1;
+  int diff = 15-5;
+  double quot = 15/3;
+  int prod = 15*3;
+  
+  if (sum == 25){
+    //run this code 
+    print("sum is 25");
+  }else if (sum == sum){
+    //run this code
+    print("sum is sun");
+  }else{
+    //run this code
+    print("or else");
+  }
+  
+  Cake butterCake = Cake("Butter", 5 );
+  Cake cheeseCake = Cake("Cheese", 1 );
+  
+  butterCake.describe();
+  cheeseCake.describe();
+}
+
+class Cake{
+  String flavor;
+  int layers;
+  
+  Cake(this.flavor, this.layers);
+  
+  void describe(){
+    print("This is a $flavor cake with $layers layers.");
+  }
+
+}
